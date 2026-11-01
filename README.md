@@ -11,6 +11,8 @@ A lightweight Java 21 library for returning multiple values of different types t
 
 ## Build and test
 
+Clone the repository and run:
+
 ```bash
 mvn clean verify
 ```
@@ -63,6 +65,20 @@ Null values are permitted.
 
 ## Maven coordinates
 
+The project currently uses these coordinates:
+
+- **Group ID:** `dev.multireturn`
+- **Artifact ID:** `multireturn`
+- **Version:** `0.1.0-SNAPSHOT`
+
+The library is not published to Maven Central yet. Until it is published, use it by building from source or installing it into your local Maven repository:
+
+```bash
+mvn clean install
+```
+
+Then add the dependency to your project:
+
 ```xml
 <dependency>
     <groupId>dev.multireturn</groupId>
@@ -71,12 +87,10 @@ Null values are permitted.
 </dependency>
 ```
 
-These are the project's current Maven coordinates. The library is not published to Maven Central yet.
-
 ## Scope
 
 The initial release focuses on `Tuple2`, `Tuple3`, `Tuple4`, and overloaded `MultiReturn.of(...)` factory methods. It does not add native Java destructuring syntax or modify the Java language.
 
 ## License
 
-Choose and add a license before distributing the project publicly.
+MultiReturn is licensed under the [MIT License](LICENSE).
